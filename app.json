@@ -1,6 +1,6 @@
 {
   "id": "com.puschie.fritzbox-bridge",
-  "version": "0.5.6",
+  "version": "0.6.0",
   "compatibility": ">=2.0.5",
   "sdk": 2,
   "name": {
@@ -70,10 +70,135 @@
       "type": "boolean",
       "title": {
         "en": "Open window detected",
-        "de": "Fenster-offen erkennung"
+        "de": "Fenster-Offen Erkennung"
       },
       "getable": true,
       "setable": false
+    },
+    "minutes_left_open_window": {
+      "type": "number",
+      "title": {
+        "en": "Open window mode active for...",
+        "de": "Fenster-Offen Aktiv für..."
+      },
+      "getable": true,
+      "setable": true,
+      "units": "min",
+      "min": 0,
+      "max": 1440,
+      "step": 1,
+      "decimals": 0,
+      "uiComponent": "sensor",
+      "insights": false
+    },
+    "enum_minutes_left_open_window": {
+      "type": "enum",
+      "title": {
+        "en": "Open window mode active for...",
+        "de": "Fenster-Offen Aktiv für..."
+      },
+      "getable": true,
+      "setable": true,
+      "units": "min",
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "de": "Aus"
+          }
+        },
+        {
+          "id": "5minutes",
+          "title": {
+            "en": "5 Minutes",
+            "de": "5 Minuten"
+          }
+        },
+        {
+          "id": "10minutes",
+          "title": {
+            "en": "10 Minutes",
+            "de": "10 Minuten"
+          }
+        },
+        {
+          "id": "15minutes",
+          "title": {
+            "en": "15 Minutes",
+            "de": "15 Minuten"
+          }
+        }
+      ],
+      "uiComponent": "picker",
+      "insights": false
+    },
+    "measure_boost_active": {
+      "type": "boolean",
+      "title": {
+        "en": "Boost Active",
+        "de": "Boost Aktiv"
+      },
+      "getable": true,
+      "setable": false
+    },
+    "minutes_left_boost_active": {
+      "type": "number",
+      "title": {
+        "en": "Boost active for...",
+        "de": "Boost Aktiv für..."
+      },
+      "getable": true,
+      "setable": true,
+      "units": "min",
+      "min": 0,
+      "max": 1440,
+      "step": 1,
+      "decimals": 0,
+      "uiComponent": "sensor",
+      "insights": false
+    },
+    "enum_minutes_left_boost_active": {
+      "type": "enum",
+      "title": {
+        "en": "Boost active for...",
+        "de": "Boost Aktiv für..."
+      },
+      "getable": true,
+      "setable": true,
+      "units": "min",
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "de": "Aus"
+          }
+        },
+        {
+          "id": "5minutes",
+          "title": {
+            "en": "5 Minutes",
+            "de": "5 Minuten"
+          }
+        },
+        {
+          "id": "10minutes",
+          "title": {
+            "en": "10 Minutes",
+            "de": "10 Minuten"
+          }
+        },
+        {
+          "id": "15minutes",
+          "title": {
+            "en": "15 Minutes",
+            "de": "15 Minuten"
+          }
+        }
+      ],
+      "uiComponent": "picker",
+      "insights": false
     },
     "measure_device_locked": {
       "type": "boolean",
@@ -177,6 +302,11 @@
       "class": "thermostat",
       "capabilities": [
         "measure_open_window",
+        "minutes_left_open_window",
+        "enum_minutes_left_open_window",
+        "measure_boost_active",
+        "minutes_left_boost_active",
+        "enum_minutes_left_boost_active",
         "measure_device_locked",
         "measure_api_locked",
         "measure_device_error",

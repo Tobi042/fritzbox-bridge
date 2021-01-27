@@ -5,5 +5,6 @@
 	"ErrorCode3": "No valve movement possible. Valve tappet free?",
 	"ErrorCode4": "The installation is currently being prepared",
 	"ErrorCode5": "The radiator controller is in installation mode and can be mounted on the heating valve",
-	"ErrorCode6": "The radiator controller now adapts to the stroke of the heating valve"
+	"ErrorCode6": "The radiator controller now adapts to the stroke of the heating valve",
+	"DeviceNeedsRepair": "Your device needs to be re-paired for this functionality. Please remove the device from Homey and add it again."
 }

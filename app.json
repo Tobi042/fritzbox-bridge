@@ -583,6 +583,86 @@
           }
         ]
       }
+    ],
+    "actions": [
+      {
+        "id": "activate_window_open_mode",
+        "title": {
+          "en": "Activate Window Open mode",
+          "de": "Fenster-Offen aktivieren"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "minutes",
+            "min": 1,
+            "max": 1440,
+            "step": 1,
+            "placeholder": {
+              "en": "How many minutes should the mode be active",
+              "de": "Wie viele Minuten soll der Modus aktiv sein"
+            }
+          },
+          {
+            "type": "device",
+            "name": "my_device",
+            "filter": "driver_id=thermostat"
+          }
+        ]
+      },
+      {
+        "id": "deactivate_window_open_mode",
+        "title": {
+          "en": "Deactivate Window Open mode",
+          "de": "Fenster-Offen deaktivieren"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "my_device",
+            "filter": "driver_id=thermostat"
+          }
+        ]
+      },
+      {
+        "id": "activate_boost_mode",
+        "title": {
+          "en": "Activate Boost mode",
+          "de": "Boost-Modus aktivieren"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "minutes",
+            "min": 1,
+            "max": 1440,
+            "step": 1,
+            "placeholder": {
+              "en": "How many minutes should the mode be active",
+              "de": "Wie viele Minuten soll der Modus aktiv sein"
+            }
+          },
+          {
+            "type": "device",
+            "name": "my_device",
+            "filter": "driver_id=thermostat"
+          }
+        ]
+      },
+      {
+        "id": "deactivate_boost_mode",
+        "title": {
+          "en": "Deactivate Boost mode",
+          "de": "Boost-Modus deaktivieren"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "my_device",
+            "filter": "driver_id=thermostat"
+          }
+        ]
+      }
     ]
   }
 }

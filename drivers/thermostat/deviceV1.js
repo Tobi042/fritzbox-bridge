@@ -16,7 +16,7 @@ const parseEnumOrStringOrMinutesLeft = (value) => {
 	if (typeof value === 'string') {
 		if (value === 'off') {
 			numericValue = 0;
-		} else if ((match = value.match(/(5|10|15)minutes/)) !== null) {
+		} else if ((match = value.match(/(\d{1,3})minutes/)) !== null) {
 			numericValue = parseInt(match[1]);
 		} else if (value.match(/[0-9]+/)) {
 			numericValue = parseInt(value);

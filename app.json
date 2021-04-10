@@ -128,6 +128,55 @@
             "en": "15 Minutes",
             "de": "15 Minuten"
           }
+        },
+        {
+          "id": "20minutes",
+          "title": {
+            "en": "20 Minutes",
+            "de": "20 Minuten"
+          }
+        },
+        {
+          "id": "25minutes",
+          "title": {
+            "en": "25 Minutes",
+            "de": "25 Minuten"
+          }
+        },
+        {
+          "id": "30minutes",
+          "title": {
+            "en": "30 Minutes",
+            "de": "30 Minuten"
+          }
+        },
+        {
+          "id": "45minutes",
+          "title": {
+            "en": "45 Minutes",
+            "de": "45 Minuten"
+          }
+        },
+        {
+          "id": "60minutes",
+          "title": {
+            "en": "60 Minutes",
+            "de": "60 Minuten"
+          }
+        },
+        {
+          "id": "90minutes",
+          "title": {
+            "en": "90 Minutes",
+            "de": "90 Minuten"
+          }
+        },
+        {
+          "id": "120minutes",
+          "title": {
+            "en": "120 Minutes",
+            "de": "120 Minuten"
+          }
         }
       ],
       "uiComponent": "picker",
@@ -194,6 +243,55 @@
           "title": {
             "en": "15 Minutes",
             "de": "15 Minuten"
+          }
+        },
+        {
+          "id": "20minutes",
+          "title": {
+            "en": "20 Minutes",
+            "de": "20 Minuten"
+          }
+        },
+        {
+          "id": "25minutes",
+          "title": {
+            "en": "25 Minutes",
+            "de": "25 Minuten"
+          }
+        },
+        {
+          "id": "30minutes",
+          "title": {
+            "en": "30 Minutes",
+            "de": "30 Minuten"
+          }
+        },
+        {
+          "id": "45minutes",
+          "title": {
+            "en": "45 Minutes",
+            "de": "45 Minuten"
+          }
+        },
+        {
+          "id": "60minutes",
+          "title": {
+            "en": "60 Minutes",
+            "de": "60 Minuten"
+          }
+        },
+        {
+          "id": "90minutes",
+          "title": {
+            "en": "90 Minutes",
+            "de": "90 Minuten"
+          }
+        },
+        {
+          "id": "120minutes",
+          "title": {
+            "en": "120 Minutes",
+            "de": "120 Minuten"
           }
         }
       ],
